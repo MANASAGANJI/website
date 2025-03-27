@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer Help</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Offer Help</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="request.html">Request Help</a></li>
+                <li><a href="offer.html">Offer Help</a></li>
+                <li><a href="help.html">Available Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="form-section">
+            <h2>Fill out the form to offer assistance</h2>
+            <form id="offerForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="location">Your Location:</label>
+                <input type="text" id="location" name="location" required>
+                
+                <label for="help-type">Type of Help You Can Offer:</label>
+                <select id="help-type" name="help-type" required>
+                    <option value="groceries">Groceries</option>
+                    <option value="medicine">Medicine</option>
+                    <option value="transport">Transport</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="description">Additional Details:</label>
+                <textarea id="description" name="description" required></textarea>
+                
+                <button type="submit" class="btn">Submit Offer</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Community Assistance. All rights reserved.</p>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>
